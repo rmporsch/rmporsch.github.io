@@ -1,5 +1,7 @@
 # Book Review: Machine learning patterns
 
+![](https://images-na.ssl-images-amazon.com/images/I/518noILL2YL._SX379_BO1,204,203,200_.jpg)
+
 Let me first say that it was a great delight to read this book.
 While I read it maybe not in the most advisable way, that is from cover to cover, it was still a very interesting read.
 It retrospect it might have been better, as actually also advised by the authors, to read the last chapter first.

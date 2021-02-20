@@ -1,4 +1,4 @@
-# Book Review: Machine learning patterns
+# Book Review: Machine Learning Design Patterns
 
 Let me first say that it was a great delight to read this book.
 While I read it maybe not in the most advisable way, that is from cover to cover, it was still a very interesting read.

@@ -4,7 +4,7 @@ Let me first say that it was a great delight to read this book.
 While I read it maybe not in the most advisable way, that is from cover to cover, it was still a very interesting read.
 It retrospect it might have been better, as actually also advised by the authors, to read the last chapter first.
 
-O'Reilly's "Machine Learning Design Pattern" is an interesting collection of various design patter.
+["Machine Learning Design Patterns"](https://www.amazon.com/Machine-Learning-Design-Patterns-Preparation-ebook/dp/B08L8GRRBM) is an interesting collection of various design patter.
 Each pattern comes with some code examples, pro and cons, as well as some alternatives.
 Overall, the authors try to hit a similar mark as the famous [Design Pattern: Elements of Reusable Object-Oriented Software](https://www.amazon.com/gp/product/0201633612/).
 While I am personally a bit sceptical that this book will gain the same traction and spread as its famous cousin, I believe this book is an important step in the right direction.

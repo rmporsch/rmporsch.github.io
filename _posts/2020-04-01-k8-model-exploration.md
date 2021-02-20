@@ -1,4 +1,4 @@
-Model explorations and hyperparameter search with W&B and Kubernetes
+Model explorations and hyperparameter search with Weights & Biases and Kubernetes
 =====================================
 
 In every machine learning project we have to continuously tweek and experiment with our models. This is necessary, not only to further improve performance, but also to explore underlying model characteristics. These constant experiments require rigorous logging and performance tracking. Hence, various different provider have come up with solutions to facilitate this tracking such as Tensorboard, Comet, W&B, as well as others. Here at [Apoidea](https://www.apoidea.ai/) we make use of [W&B](https://www.wandb.com/).

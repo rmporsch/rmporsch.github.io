@@ -1,4 +1,31 @@
-# Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.
+**Masters Programmes**
+
+[**Dissertation Cover Sheet**]{style="color: wbsblue"}
+
+**Degree Course:** Distance Learning MBA
+
+**Student ID Number:** 2068407
+
+**Title:** Open Source, Open Collaboration: A Statistical Analysis of
+Firm Interactions in Software Development.
+
+**Dissertation Code:** IB984P
+
+**Submission Deadline:**
+
+**Word Count:** 10668
+
+**Number of Pages:** 35
+
+**\"I declare that this work is entirely my own in accordance with the
+University's Regulation 11 and the WBS guidelines on plagiarism and
+collusion. All external references and sources are clearly acknowledged
+and identified within the contents. No substatial part(s) of the work
+submitted here has also been submitted by me in other assessments for
+accredited courses of study, and I acknowledge that if this has been
+done it may result in me being reported for self-plagiarism and an
+appropriate reduction in marks may be made when marking this piece of
+work.\"**
 
 Introduction {#sec:intro}
 ============
@@ -89,7 +116,7 @@ reference="fig:structural_approach"}), also called *pooled R&D* by
 [@west2006].
 
 ![The Innovation Funnel. Adopted from
-[@chesbrough2014]](images/blog-images/thesis/innovation_funnel.pdf){width="80%"}
+[@chesbrough2014]](images/innovation_funnel.pdf){width="80%"}
 
 [\[fig:innovation\_funnel\]]{#fig:innovation_funnel
 label="fig:innovation_funnel"}

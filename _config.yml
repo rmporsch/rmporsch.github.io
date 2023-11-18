@@ -41,3 +41,9 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+scholar:
+  style: apa
+  source: images/blog-images/thesis
+  bibliography: thesis.bib
+

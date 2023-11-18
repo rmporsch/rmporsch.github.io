@@ -89,7 +89,7 @@ reference="fig:structural_approach"}), also called *pooled R&D* by
 [@west2006].
 
 ![The Innovation Funnel. Adopted from
-[@chesbrough2014]](/rmporsch/images/blog-images/thesis/innovation_funnel.pdf){width="80%"}
+[@chesbrough2014]](innovation_funnel.pdf){width="80%"}
 
 [\[fig:innovation\_funnel\]]{#fig:innovation_funnel
 label="fig:innovation_funnel"}

@@ -233,7 +233,7 @@ GEM
     minitest (5.20.0)
     multipart-post (2.3.0)
     namae (1.1.1)
-    nokogiri (1.15.5)
+    nokogiri (1.16.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octicons (19.8.0)

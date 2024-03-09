@@ -1,4 +1,10 @@
-# Book Review: Machine Learning Design Patterns
+---
+title: "Book Review: Machine Learning Design Patterns"
+author: "Robert Porsch"
+date: "2024-03-09"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
 
 Let me first say that it was a great delight to read this book.
 While I read it maybe not in the most advisable way, that is from cover to cover, it was still a very interesting read.

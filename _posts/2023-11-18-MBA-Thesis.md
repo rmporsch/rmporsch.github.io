@@ -5,25 +5,25 @@ Introduction {#sec:intro}
 
 Open-Source is an approach to how software is licensed and created,
 allowing anyone to inspect, modify, and improve the underlying source
-code [@perens1999]. Open-Source Software (OSS) originated first within
+code {% cite perens1999 %}. Open-Source Software (OSS) originated first within
 universities when software was freely distributed among scientists
-during the early 1950s [@dibona1999]. This approach stands in contrast
+during the early 1950s {% cite dibona1999 %}. This approach stands in contrast
 to proprietary software development, whose source code is only available
 to the organization which owns the underlying intellectual properties
-[@scott2003]. OSS was first formalized by Richard Stallman in 1984 as
+{% cite scott2003 %}. OSS was first formalized by Richard Stallman in 1984 as
 Free Software under the GNU Project, aimed to provide a licensing
-framework for software created to be freely distributed [@perens1999].
+framework for software created to be freely distributed {% cite perens1999 %}.
 The Free Software Foundation later adopted this definition as the
 specification for what is now commonly referred to as open-source
-software [@debianfoundation2023].
+software {% cite debianfoundation2023 %}.
 
 The number of OSS projects has grown exponentially as the number of
-projects surged between 1990 and 2006 [@deshpande2008]. While OSS was
+projects surged between 1990 and 2006 {% cite deshpande2008 %}. While OSS was
 mainly driven by independent developers donating their time and skills
 in the early years, commercial organizations are increasingly expanding
 their contributions. Specifically, developers paid by large information
 technology (IT) firms, such as Microsoft or Google, are often dominating
-OSS projects [@stephens2021]. However, despite this significant growth
+OSS projects {% cite stephens2021 %}. However, despite this significant growth
 over the last decade, there are some indications that this growth has
 been slowing in the last few years
 (Figure [\[fig:repo\_growth\]](#fig:repo_growth){reference-type="ref"
@@ -37,26 +37,26 @@ platform GitHub between 2012 and
 
 Nevertheless, increasingly corporations have adopted open source
 practices as a valuable addition to their strategic toolkit
-[@ahmad2021; @bonaccorsi2007; @germonprez2013; @schaarschmidt2015; @zhang2020a].
-[@blackduck2016] reported in their Open Source Survey that an estimated
+{% cite ahmad2021; @bonaccorsi2007; @germonprez2013; @schaarschmidt2015; @zhang2020a %}.
+{% cite blackduck2016 %} reported in their Open Source Survey that an estimated
 65% of technology firms are actively contributing to OSS projects,
 demonstrating the increasing importance of OSS to firms. In financial
-terms, [@blind2023] estimated the average impact of OSS at around 2.2%
+terms, {% cite blind2023 %} estimated the average impact of OSS at around 2.2%
 of today's GDP per country, thus representing a sizable economic effect.
 This increase in corporate involvement is also seen in the composition
 of contributions to individual projects. For example, while
 traditionally, OSS projects were led by individual developers with no
 affiliation to specific firms, companies now contribute more than 90% to
-many well-known OSS projects such as the Linux Project [@zhang2020a].
+many well-known OSS projects such as the Linux Project {% cite zhang2020a %}.
 
 While the growth and impact of OSS and the contributions of companies
 are well understood, the motivations behind these actions remain less
-clear [@germonprez2013; @lerner2002; @bonaccorsi2007]. Why would
+clear {% cite germonprez2013; @lerner2002; @bonaccorsi2007 %}. Why would
 companies invest resources in research and development if the results of
 this labor would also be available to competitors? Previous research has
 aimed to answer this question by exploring the individual strategic
 objectives and incentives of firms to participate in OSS development
-[@germonprez2013; @taherizadeh2019; @ghapanchi2014; @liu2022; @nagle2019].
+{% cite germonprez2013; @taherizadeh2019; @ghapanchi2014; @liu2022; @nagle2019 %}.
 However, little research has been done on the actual project-level
 factors predictive of corporate collaboration in OSS and how the degree
 of collaboration affects project productivity.
@@ -66,8 +66,8 @@ Theory and Hypotheses {#sec:litreview}
 
 Collaborations in OSS are primarily understood through the lens of open
 innovation (OI) in the academic literature
-[@vanhaverbeke2014; @chesbrough2014; @west2006; @gassmann2004; @bogers2017].
-[@chesbrough2014] referred to OI as a model that focuses on managed
+{% cite vanhaverbeke2014; @chesbrough2014; @west2006; @gassmann2004; @bogers2017 %}.
+{% cite chesbrough2014 %} referred to OI as a model that focuses on managed
 inflows and outflows of knowledge across the company boundary. As such,
 OI has focused on outside-in innovation, that is, the leverage of
 external knowledge to increase internal innovation, and inside-out
@@ -77,33 +77,33 @@ external parties (Figure
 reference="fig:innovation_funnel"}). Thus, OI aims to manage the
 positive externalities that arise when knowledge generated through
 research and development (R&D) activities by one firm spills over to
-other firms, also called spillover [@cheung2004]. As this effect is
+other firms, also called spillover {% cite cheung2004 %}. As this effect is
 unavoidable to prevent, OI utilizes specific mechanisms to direct this
-inflow and outflow of knowledge [@chesbrough2014]. In addition to these
-two processes, [@gassmann2004] proposed a further innovation process
+inflow and outflow of knowledge {% cite chesbrough2014 %}. In addition to these
+two processes, {% cite gassmann2004 %} proposed a further innovation process
 called *coupled process*. This process can be seen as a combined
 outside-in, and inside-out mechanism in which two or more complementary
 firms collaborate (Figure
 [\[fig:structural\_approach\]](#fig:structural_approach){reference-type="ref"
 reference="fig:structural_approach"}), also called *pooled R&D* by
-[@west2006].
+{% cite west2006 %}.
 
 ![The Innovation Funnel. Adopted from
-[@chesbrough2014]](innovation_funnel.pdf){width="80%"}
+{% cite chesbrough2014 %}](innovation_funnel.pdf){width="80%"}
 
 [\[fig:innovation\_funnel\]]{#fig:innovation_funnel
 label="fig:innovation_funnel"}
 
 This *couple process* closely resembles OSS development practices in
 which a network of individual volunteers and organizations gather around
-a common goal [@vonhippel2007; @west2014]. Many of these OSS projects
+a common goal {% cite vonhippel2007; @west2014 %}. Many of these OSS projects
 represent an open network of innovation communities and bear
 similarities to more formal strategic alliances aimed at sharing costs
-and bringing external expertise to the project [@taherizadeh2019].
+and bringing external expertise to the project {% cite taherizadeh2019 %}.
 However, strategic alliances are typically governed by contractual or
 equity obligations, while OSS commonly uses non-binding social
 commitments and does not aim to control knowledge spillovers due to
-their open nature. In their analysis of 124 firms, [@gassmann2004]
+their open nature. In their analysis of 124 firms, {% cite gassmann2004 %}
 suggested that coupled processes were used by firms to set standards or
 to dominate the future development of new technology. These firms were
 able to improve their competitive position and minimize risks when they
@@ -112,46 +112,46 @@ relationships, requiring the capability to both absorb and externalize
 new knowledge. Interestingly, some corporations have aimed to combine
 open innovation networks and formal strategic alliances by creating
 formal arrangements with informal innovation hubs, blurring the
-distinction between these two innovation strategies [@shaikh2019].
+distinction between these two innovation strategies {% cite shaikh2019 %}.
 
 ![Structural approach to software development. Modified based on
-[@west2006]](images/Innovation-Structures.excalidraw.png)
+{% cite west2006 %}](images/Innovation-Structures.excalidraw.png)
 
 [\[fig:structural\_approach\]]{#fig:structural_approach
 label="fig:structural_approach"}
 
-For example, the popular open-source operating system Linux [@linux],
+For example, the popular open-source operating system Linux {% cite linux %},
 which Linus Torvalds started as a hobby project, was initially developed
 by a community of individual developers. Today, the Linux project is
 formalized into an independent foundation and receives contributions
-from individuals and over 200 corporations alike [@ahmad2021], making it
+from individuals and over 200 corporations alike {% cite ahmad2021 %}, making it
 a community of corporate and individual contributors. This corporate
 involvement goes beyond code contributions and includes community
-building and project governance [@bonaccorsi2007].
+building and project governance {% cite bonaccorsi2007 %}.
 
 Next to co-creating OSS projects within a network, some firms may decide
 to open-source internal software to the public. This *inside-out*
 transformation of internal intellectual properties (IP) can aim to lower
-development cost [@west2006]. However, corporate control over the future
+development cost {% cite west2006 %}. However, corporate control over the future
 direction of the software is often tightly maintained within these
-transformations [@west2006; @west2014; @vanhaverbeke2006]. This control
+transformations {% cite west2006; @west2014; @vanhaverbeke2006 %}. This control
 does not necessarily require ownership as firms can donate their IP to
 an independent foundation, giving up formal control over the project
 while remaining a dominating contributor and steering the direction of
-the project [@honeypot2022; @zhang2020a].
+the project {% cite honeypot2022; @zhang2020a %}.
 
 At last, *outside-in* innovation processes in the context of OSS are
 often aimed at bringing in software developed by independent developers
 or other corporations. Specifically, firms might 'free ride' on existing
 OSS projects to support their internal software ecosystem, building on
-top of industry-validated and proven software [@kumar2011]. For example,
+top of industry-validated and proven software {% cite kumar2011 %}. For example,
 many firms are utilizing smaller open-source projects maintained by only
 a few independent developers to support crucial infrastructure or
-network security [@silic2016]. These firms rely on community
+network security {% cite silic2016 %}. These firms rely on community
 contributors or other organizations to fix software bugs or security
 issues within these OSS.
 
-In their paper, [@vanhaverbeke2008] argued that some firms may use OSS
+In their paper, {% cite vanhaverbeke2008 %} argued that some firms may use OSS
 to cope with innovation risks and uncertainty by making small
 investments to create options for the company. Specifically, firms may
 contribute small amounts to a project without fully integrating the
@@ -164,18 +164,18 @@ Overall, these open innovation strategies aim to exploit internal
 innovation, bring in external knowledge, and motivate outsiders to
 contribute to the firm's projects. Interestingly, some but not all of
 these OSS communities are leveraged to sell innovations as products or
-services [@west2008]. For example, [@vonhippel2007] found that some OSS
+services {% cite west2008 %}. For example, {% cite vonhippel2007 %} found that some OSS
 projects are examples of innovation networks consisting only of users,
 defined as individuals or organizations that use but do not sell their
 innovations. Within these horizontal networks, users drive innovation
-development, production, distribution, and consumption. [@vonhippel2007]
+development, production, distribution, and consumption. {% cite vonhippel2007 %}
 identified three conditions necessary for the development of these
 horizontal user innovation networks: (1) Some users are willing to
 innovate, (2) some users freely reveal their innovations, and (3) users
 can manufacture their innovations at a low cost.
 
 These conditions align with the qualitative investigation by
-[@butler2021], who looked at the different modes of corporate
+{% cite butler2021 %}, who looked at the different modes of corporate
 contribution and collaboration. The authors conducted multiple interview
 studies with companies and their employees who contributed to OSS
 projects to understand the underlying motivations. Most interviewees
@@ -186,7 +186,7 @@ core motivation for firms was to maintain the sustainability of OSS
 projects which are crucial but non-differentiating. Thus, firms'
 products might integrate or depend on external OSS projects but are not
 perceived as generating value for the business, broadly agreeing with
-the [@vonhippel2007] required three conditions of horizontal user
+the {% cite vonhippel2007 %} required three conditions of horizontal user
 innovations.
 
 However, the interviewees also reported other forms of contribution
@@ -194,8 +194,8 @@ beyond additions to the project's source code. This included membership
 on steering committees, financial contributions, project governance, and
 community building. Thus, aligning more closely to the ideas of open
 innovation communities, which include identity, memberships, and
-loyalty, than horizontal user networks [@west2008]. Although
-[@vonhippel2007] states that user networks can be part of communities,
+loyalty, than horizontal user networks {% cite west2008 %}. Although
+{% cite vonhippel2007 %} states that user networks can be part of communities,
 it does suggest that firms may have two distinct motivations and
 processes when engaging in OSS development: (1) A coupled innovation
 process to develop or maintain non-differentiating software and (2) an
@@ -214,7 +214,7 @@ organization to control the in-flow and out-flow of innovation. In
 contrast, other firms might be less inclined to collaborate with
 competitors in these scenarios as there might lose control of their OSS
 contributions. Some evidence for this theory comes from a study by
-[@oneil2022] who demonstrated selective cooperation of companies within
+{% cite oneil2022 %} who demonstrated selective cooperation of companies within
 OSS projects. In their analysis of 135 projects on the popular
 open-source platform GitHub, the authors identified non-overlapping
 contribution territories among major technology companies. Specifically,
@@ -227,7 +227,7 @@ incentivised to collaborate with dominant large cooperations on OSS
 projects to utilize the innovation resources of their bigger partner.
 
 A more quantitative perspective on the same questions comes from
-[@zhang2022] who investigated the OpenStack ecosystem, a collection of
+{% cite zhang2022 %} who investigated the OpenStack ecosystem, a collection of
 thousands of individual OSS projects. This network of projects, mostly
 maintained and developed by firms, contains a wide range of software
 aimed at cloud computing technologies. The authors find that while most
@@ -249,15 +249,15 @@ diverse range of other projects.
 
 Overall, past research has found a significant degree of corporate
 collaboration within OSS projects with single firms often dominating and
-controlling the projects [@zhang2022; @schaarschmidt2015]. One can
+controlling the projects {% cite zhang2022; @schaarschmidt2015 %}. One can
 hypothesize that the domination of a single actor can lead to fewer
 contributions by other firms due to the assumed lack of control and
 dependence on a potential competitor. Interestingly, this pattern is
 also observed on the individual software developer level in which the
 majority of code is often only produced by a few individuals
-[@hawkins2004]. This suggests that while these projects remain open to
+{% cite hawkins2004 %}. This suggests that while these projects remain open to
 all to contribute, others are not incentivized to join. Both
-[@zhang2022] and [@hawkins2004] remain descriptive in their analysis of
+{% cite zhang2022 %} and {% cite hawkins2004 %} remain descriptive in their analysis of
 dominating OSS developers and have not quantitatively tested if the
 dominant contribution behaviors of one firm will lower the incentives of
 others to contribute.
@@ -272,26 +272,26 @@ Hypothesis [\[hyp:license\]](#hyp:license){reference-type="ref" reference="hyp:l
 Transaction cost economic theory (TCE) suggests that firms choose
 different forms of governance modes to minimize transaction costs given
 the threat of spillovers and opportunism when working with others
-[@williamson1975]. These transaction costs are the resources that must
+{% cite williamson1975 %}. These transaction costs are the resources that must
 be spent to complete a transaction. This includes, for example, the cost
 before the transactions, such as drafting of contracts or negotiating,
 and subsequent costs, such as setup or running costs, maladaptation
 costs, and others. TCE suggests that firms adopt either a market or
 hierarchical organization to adapt to this perceived transaction costs
-[@hsieh2016]. Thus, companies may use efficient price mechanisms on the
+{% cite hsieh2016 %}. Thus, companies may use efficient price mechanisms on the
 open market to coordinate between innovation collaborators (market
 organization) or utilize internal hierarchical structures within the
 company boundaries (hierarchical organization) to control spillovers.
 The transaction cost of a product or service is influenced by the
 assets' specificity, uncertainty, and transaction frequency
-[@williamson1975; @williamson1985; @williamson2010]. [@williamson1985]
+{% cite williamson1975; @williamson1985; @williamson2010 %}. {% cite williamson1985 %}
 defined the most critical component, asset specificity, as the degree to
 which assets are specialized for a specific transaction, making it
 costly to use for other purposes.
 
-TCE has been applied outside of OI with great success [@williamson1985],
+TCE has been applied outside of OI with great success {% cite williamson1985 %},
 but the application of the theory to the OI phenomenon has been viewed
-critically by others [@vanhaverbeke2014; @remneland-wikhamn2012]. For
+critically by others {% cite vanhaverbeke2014; @remneland-wikhamn2012 %}. For
 example, TCE suggests that transaction cost increases when dealing with
 non-trusted and potentially opportunistic market participants. To manage
 this behavioral uncertainty, firms can adopt more control through

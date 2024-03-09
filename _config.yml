@@ -45,6 +45,5 @@ kramdown:
 
 scholar:
   style: apa
-  source: images/blog-images/thesis
   bibliography: thesis.bib
 

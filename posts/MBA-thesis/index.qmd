@@ -2,7 +2,7 @@
 title: "Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development."
 description: "As part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity."
 author: "Robert Porsch"
-date: "5/22/2021"
+date: "6/05/2023"
 categories:
   - thesis
 bibliography: thesis.bib

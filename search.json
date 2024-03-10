@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Myblog",
-    "section": "",
-    "text": "Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.\n\n\n\n\n\n\nthesis\n\n\n\nAs part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity.\n\n\n\n\n\nMay 22, 2021\n\n\nRobert Porsch\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -124,5 +117,12 @@
     "title": "Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.",
     "section": "Appendix",
     "text": "Appendix\n\n\n\n\nDistribution of variables. Histograms of continuous and bar plot of categorized variables.\n\n\n\n\n\nCorrelation Heatmap. Correlations between continuous variables\n\n\n\n\n\nFigure 1: Number of open-source repositories on the popular OSS collaboration platform GitHub between 2012 and 2022\nFigure 2: Structural approach to software development. Modified based on West and Gallagher (2006)\nFigure 4: Interaction effect between centrality and intensity on the number of project collaborators.\nFigure 5: Relationship between code commits and SDI. The red line indicates the estimated U-shape relationship between commits and SDI."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Myblog",
+    "section": "",
+    "text": "Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.\n\n\n\n\n\n\nthesis\n\n\n\nAs part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity.\n\n\n\n\n\nJun 5, 2023\n\n\nRobert Porsch\n\n\n\n\n\n\nNo matching items"
   }
 ]

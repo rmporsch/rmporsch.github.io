@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rmporsch.github.io/index.html</loc>
-    <lastmod>2024-03-10T12:56:17.032Z</lastmod>
-  </url>
-  <url>
     <loc>https://rmporsch.github.io/about.html</loc>
-    <lastmod>2024-03-10T12:56:17.032Z</lastmod>
+    <lastmod>2024-03-10T14:11:13.339Z</lastmod>
   </url>
   <url>
     <loc>https://rmporsch.github.io/posts/MBA-thesis/index.html</loc>
-    <lastmod>2024-03-10T12:56:17.040Z</lastmod>
+    <lastmod>2024-03-10T14:11:13.343Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rmporsch.github.io/index.html</loc>
+    <lastmod>2024-03-10T14:11:13.339Z</lastmod>
   </url>
 </urlset>

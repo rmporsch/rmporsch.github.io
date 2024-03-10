@@ -1,18 +1,31 @@
 ---
-title: "MBA Thesis"
-description: "Post description"
-author: "Fizz McPhee"
+title: "Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development."
+description: "As part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity."
+author: "Robert Porsch"
 date: "5/22/2021"
 categories:
-  - news
-  - code
-  - analysis
+  - thesis
 bibliography: thesis.bib
+toc: true
+abstract: |
+  In the past decade, there has been a growing trend of firms participating in open-source software (OSS) development and collaboration.
+  However, while previous research has focused on the strategic objectives and incentives that drive firms to engage in OSS, there has been a lack of investigation into the project-level factors that promote active collaboration among firms.
+  Additionally, little research has been done to explore how the composition of corporate collaborators affects project productivity.
+
+  To address this gap, this study draws on the Resource-based view (RBV) and Transaction cost economic theory (TCE) to develop several hypotheses that identify predictors of corporate collaboration in OSS projects.
+  The study uses a sample of 1,127 OSS projects from the popular code collaboration platform GitHub and conducts a regression analysis to explore how license choice, code commit intensity, and network centrality affect corporate collaboration while controlling for confounding factors.
+  Furthermore, Monte-Carlo analysis is used to test for non-linear relationships between collaboration heterogeneity and productivity.
+
+  The results of this investigation reveal that single-firm dominance and license restrictiveness can hinder collaboration among firms, while the level of collaboration heterogeneity has a U-shaped effect on project productivity.
+  These findings highlight the importance of firms providing opportunities for others to collaborate and balancing hierarchical controls within OSS projects when seeking to attract collaborating partners.
+  Companies should also consider how collaboration diversity can impact productivity and develop practical and scalable governance mechanisms.
+
+  Overall, this study contributes to our understanding of the factors that drive collaboration among firms in OSS projects and their impact on productivity.
+  Future research could focus on scrutinizing the causal relationships between these factors.
 ---
 
-# Open Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.
 
-Introduction {#sec:intro}
+Introduction
 ============
 
 Open-Source is an approach to how software is licensed and created,
@@ -37,23 +50,19 @@ their contributions. Specifically, developers paid by large information
 technology (IT) firms, such as Microsoft or Google, are often dominating
 OSS projects [@stephens2021]. However, despite this significant growth
 over the last decade, there are some indications that this growth has
-been slowing in the last few years
-(Figure [\[fig:repo\_growth\]](#fig:repo_growth){reference-type="ref"
-reference="fig:repo_growth"}).
+been slowing in the last few years (@fig-repo_growth).
 
 ![Number of open-source repositories on the popular OSS collaboration
 platform GitHub between 2012 and
-2022](images/num_repos.pdf){width="55%"}
-
-[\[fig:repo\_growth\]]{#fig:repo_growth label="fig:repo_growth"}
+2022](images/num_repos.png){#fig-repo_growth width="55%" .lightbox}
 
 Nevertheless, increasingly corporations have adopted open source
 practices as a valuable addition to their strategic toolkit
 [@ahmad2021; @bonaccorsi2007; @germonprez2013; @schaarschmidt2015; @zhang2020a].
-[@blackduck2016] reported in their Open Source Survey that an estimated
+@blackduck2016 reported in their Open Source Survey that an estimated
 65% of technology firms are actively contributing to OSS projects,
 demonstrating the increasing importance of OSS to firms. In financial
-terms, [@blind2023] estimated the average impact of OSS at around 2.2%
+terms, @blind2023 estimated the average impact of OSS at around 2.2%
 of today's GDP per country, thus representing a sizable economic effect.
 This increase in corporate involvement is also seen in the composition
 of contributions to individual projects. For example, while
@@ -73,38 +82,28 @@ However, little research has been done on the actual project-level
 factors predictive of corporate collaboration in OSS and how the degree
 of collaboration affects project productivity.
 
-Theory and Hypotheses {#sec:litreview}
+Theory and Hypotheses 
 =====================
 
 Collaborations in OSS are primarily understood through the lens of open
 innovation (OI) in the academic literature
 [@vanhaverbeke2014; @chesbrough2014; @west2006; @gassmann2004; @bogers2017].
-[@chesbrough2014] referred to OI as a model that focuses on managed
+@chesbrough2014 referred to OI as a model that focuses on managed
 inflows and outflows of knowledge across the company boundary. As such,
 OI has focused on outside-in innovation, that is, the leverage of
 external knowledge to increase internal innovation, and inside-out
 innovation, which is the distribution of internal innovations to
-external parties (Figure
-[\[fig:innovation\_funnel\]](#fig:innovation_funnel){reference-type="ref"
-reference="fig:innovation_funnel"}). Thus, OI aims to manage the
+external parties. Thus, OI aims to manage the
 positive externalities that arise when knowledge generated through
 research and development (R&D) activities by one firm spills over to
 other firms, also called spillover [@cheung2004]. As this effect is
 unavoidable to prevent, OI utilizes specific mechanisms to direct this
 inflow and outflow of knowledge [@chesbrough2014]. In addition to these
-two processes, [@gassmann2004] proposed a further innovation process
+two processes, @gassmann2004 proposed a further innovation process
 called *coupled process*. This process can be seen as a combined
 outside-in, and inside-out mechanism in which two or more complementary
-firms collaborate (Figure
-[\[fig:structural\_approach\]](#fig:structural_approach){reference-type="ref"
-reference="fig:structural_approach"}), also called *pooled R&D* by
-[@west2006].
-
-![The Innovation Funnel. Adopted from
-[@chesbrough2014]](innovation_funnel.pdf){width="80%"}
-
-[\[fig:innovation\_funnel\]]{#fig:innovation_funnel
-label="fig:innovation_funnel"}
+firms collaborate (@fig-structural_approach), also called *pooled R&D* by
+@west2006.
 
 This *couple process* closely resembles OSS development practices in
 which a network of individual volunteers and organizations gather around
@@ -115,7 +114,7 @@ and bringing external expertise to the project [@taherizadeh2019].
 However, strategic alliances are typically governed by contractual or
 equity obligations, while OSS commonly uses non-binding social
 commitments and does not aim to control knowledge spillovers due to
-their open nature. In their analysis of 124 firms, [@gassmann2004]
+their open nature. In their analysis of 124 firms, @gassmann2004
 suggested that coupled processes were used by firms to set standards or
 to dominate the future development of new technology. These firms were
 able to improve their competitive position and minimize risks when they
@@ -127,10 +126,7 @@ formal arrangements with informal innovation hubs, blurring the
 distinction between these two innovation strategies [@shaikh2019].
 
 ![Structural approach to software development. Modified based on
-[@west2006]](images/Innovation-Structures.excalidraw.png)
-
-[\[fig:structural\_approach\]]{#fig:structural_approach
-label="fig:structural_approach"}
+@west2006](images/Innovation-Structures.excalidraw.png){#fig-structural_approach .lightbox}
 
 For example, the popular open-source operating system Linux [@linux],
 which Linus Torvalds started as a hobby project, was initially developed
@@ -163,7 +159,7 @@ network security [@silic2016]. These firms rely on community
 contributors or other organizations to fix software bugs or security
 issues within these OSS.
 
-In their paper, [@vanhaverbeke2008] argued that some firms may use OSS
+In their paper, @vanhaverbeke2008 argued that some firms may use OSS
 to cope with innovation risks and uncertainty by making small
 investments to create options for the company. Specifically, firms may
 contribute small amounts to a project without fully integrating the
@@ -176,18 +172,18 @@ Overall, these open innovation strategies aim to exploit internal
 innovation, bring in external knowledge, and motivate outsiders to
 contribute to the firm's projects. Interestingly, some but not all of
 these OSS communities are leveraged to sell innovations as products or
-services [@west2008]. For example, [@vonhippel2007] found that some OSS
+services [@west2008]. For example, @vonhippel2007 found that some OSS
 projects are examples of innovation networks consisting only of users,
 defined as individuals or organizations that use but do not sell their
 innovations. Within these horizontal networks, users drive innovation
-development, production, distribution, and consumption. [@vonhippel2007]
+development, production, distribution, and consumption. @vonhippel2007
 identified three conditions necessary for the development of these
 horizontal user innovation networks: (1) Some users are willing to
 innovate, (2) some users freely reveal their innovations, and (3) users
 can manufacture their innovations at a low cost.
 
 These conditions align with the qualitative investigation by
-[@butler2021], who looked at the different modes of corporate
+@butler2021, who looked at the different modes of corporate
 contribution and collaboration. The authors conducted multiple interview
 studies with companies and their employees who contributed to OSS
 projects to understand the underlying motivations. Most interviewees
@@ -198,7 +194,7 @@ core motivation for firms was to maintain the sustainability of OSS
 projects which are crucial but non-differentiating. Thus, firms'
 products might integrate or depend on external OSS projects but are not
 perceived as generating value for the business, broadly agreeing with
-the [@vonhippel2007] required three conditions of horizontal user
+the @vonhippel2007 required three conditions of horizontal user
 innovations.
 
 However, the interviewees also reported other forms of contribution
@@ -207,7 +203,7 @@ on steering committees, financial contributions, project governance, and
 community building. Thus, aligning more closely to the ideas of open
 innovation communities, which include identity, memberships, and
 loyalty, than horizontal user networks [@west2008]. Although
-[@vonhippel2007] states that user networks can be part of communities,
+@vonhippel2007 states that user networks can be part of communities,
 it does suggest that firms may have two distinct motivations and
 processes when engaging in OSS development: (1) A coupled innovation
 process to develop or maintain non-differentiating software and (2) an
@@ -217,8 +213,7 @@ significant control over the OSS project, resulting in fewer
 collaborations. Either through direct project governance or through a
 dominant amount of code contribution.
 
-Hypothesis [\[hyp:firm\_dominating\]](#hyp:firm_dominating){reference-type="ref" reference="hyp:firm_dominating"}: Control Through Domination {#ssec:controldomination}
----------------------------------------------------------------------------------------------------------------------------------------------
+## Hypothesis 1: Control Through Domination 
 
 A firm might aim to be a dominating contributor within an OSS project to
 maintain control and steer the innovation process, enabling the
@@ -226,7 +221,7 @@ organization to control the in-flow and out-flow of innovation. In
 contrast, other firms might be less inclined to collaborate with
 competitors in these scenarios as there might lose control of their OSS
 contributions. Some evidence for this theory comes from a study by
-[@oneil2022] who demonstrated selective cooperation of companies within
+@oneil2022 who demonstrated selective cooperation of companies within
 OSS projects. In their analysis of 135 projects on the popular
 open-source platform GitHub, the authors identified non-overlapping
 contribution territories among major technology companies. Specifically,
@@ -239,7 +234,7 @@ incentivised to collaborate with dominant large cooperations on OSS
 projects to utilize the innovation resources of their bigger partner.
 
 A more quantitative perspective on the same questions comes from
-[@zhang2022] who investigated the OpenStack ecosystem, a collection of
+@zhang2022 who investigated the OpenStack ecosystem, a collection of
 thousands of individual OSS projects. This network of projects, mostly
 maintained and developed by firms, contains a wide range of software
 aimed at cloud computing technologies. The authors find that while most
@@ -269,17 +264,16 @@ also observed on the individual software developer level in which the
 majority of code is often only produced by a few individuals
 [@hawkins2004]. This suggests that while these projects remain open to
 all to contribute, others are not incentivized to join. Both
-[@zhang2022] and [@hawkins2004] remain descriptive in their analysis of
+@zhang2022 and @hawkins2004 remain descriptive in their analysis of
 dominating OSS developers and have not quantitatively tested if the
 dominant contribution behaviors of one firm will lower the incentives of
 others to contribute.
 
-OSS projects in which a single firm dominates will have fewer
-collaborating partners [\[hyp:firm\_dominating\]]{#hyp:firm_dominating
-label="hyp:firm_dominating"}
+::: {.callout-tip title="Hypothesis 1: Control Through Domination"}
+OSS projects in which a single firm dominates will have fewer collaborating partners 
+:::
 
-Hypothesis [\[hyp:license\]](#hyp:license){reference-type="ref" reference="hyp:license"}: Control through Licenses {#sssec:transaction_cost_theory}
-------------------------------------------------------------------------------------------------------------------
+## Hypothesis 2: Control through Licenses
 
 Transaction cost economic theory (TCE) suggests that firms choose
 different forms of governance modes to minimize transaction costs given
@@ -309,7 +303,7 @@ non-trusted and potentially opportunistic market participants. To manage
 this behavioral uncertainty, firms can adopt more control through
 licenses, thus aiming to reduce tension and lowering spillovers.
 
-Empirical evidence on this comes from [@oxley1997], who showed in their
+Empirical evidence on this comes from @oxley1997, who showed in their
 analysis of governance modes in strategic alliances that firms commonly
 adopt more hierarchical forms in the presence of weak intellectual
 property rights. Similar results were also shown in other studies in the
@@ -317,7 +311,7 @@ US automotive industry [@langlois1989] and the biopharmaceuticals
 industry [@gulati1998]. However, applying TCE to OSS has focused mainly
 on the engagement of individual customers [@benkler2002; @prahalad2004]
 or contributors from the community [@sawhney2005]. For example,
-[@benkler2002] suggested that the increased availability of digital
+@benkler2002 suggested that the increased availability of digital
 tools and personal computing gives rise to new forms of 'social
 production' as an alternative to market-driven innovations. This view of
 TCE aligns with the early social-political ideas around OSS development
@@ -340,7 +334,7 @@ licenses and other forms of governance
 [@lerner2002; @ahmad2021; @zhang2022], therefore increasing specificity.
 
 In their study of 250 Chinese start-ups in electronic and IT, for
-example, [@hsieh2016] empirically showed that firms with high
+example, @hsieh2016 empirically showed that firms with high
 specificity and behavioral uncertainty adopted more elevated levels of
 internal governance but engaged in open-innovation strategies to
 commercialize their products or services. Similar observations have been
@@ -366,19 +360,19 @@ an OSS license can be seen as a way to impose higher transaction costs
 and therefore represents a form of hierarchical control. Thus, one would
 expect that more restrictive licenses would lead to less collaboration.
 
+::: {.callout-tip title="Hypothesis 2: Control through Licenses"}
 OSS projects with more restrictive licenses have fewer collaborators.
-[\[hyp:license\]]{#hyp:license label="hyp:license"}
+:::
 
-Hypothesis [\[hyp:u-shape\]](#hyp:u-shape){reference-type="ref" reference="hyp:u-shape"}: Collaborations heterogeneity and productivity {#ssec:colabProduct}
----------------------------------------------------------------------------------------------------------------------------------------
+## Hypothesis 3: Collaborations heterogeneity and productivity 
 
 Overall, TCE has been argued to be a sound theoretical framework to
 describe and understand OI
 [@vanhaverbeke2006; @dahlander2010; @vrande2010; @bogers2011]. However,
 the application of TCE on OI has not been without criticism. For
-example, [@vanhaverbeke2014] questioned firms' desire to minimize
+example, @vanhaverbeke2014 questioned firms' desire to minimize
 transaction costs rather than maximize transaction value. Indeed,
-[@dyer1997] empirically showed within the automotive industry in the
+@dyer1997 empirically showed within the automotive industry in the
 U.S.A. and Japan that firms are more focused on the total transaction
 value, that is, transaction value minus transaction cost. As a result,
 while transaction cost can increase with specificity, firms will choose
@@ -389,7 +383,7 @@ suggest two distinct types of OSS projects: Those dominated and
 controlled by a single firm and those that develop software with less
 hierarchical structures but more equal contributions.
 
-[@demil2006] suggested that the latter form might result in productivity
+@demil2006 suggested that the latter form might result in productivity
 gains for associated firms through lower transaction costs caused by
 sharing a single open-source contract among contributors and less
 uncertainty via a more significant number of available partners. Thus,
@@ -410,12 +404,11 @@ limited quantity of developers. Conclusively, one would hypothesize a
 U-Shaped relationship between collaboration heterogeneity and
 productivity in OSS projects.
 
-There is a U-Shape relationship between collaboration heterogeneity and
-project productivity. [\[hyp:u-shape\]]{#hyp:u-shape
-label="hyp:u-shape"}
+::: {.callout-tip title="Hypothesis 3: Collaborations heterogeneity and productivity"}
+There is a U-Shape relationship between collaboration heterogeneity and project productivity.
+:::
 
-Hypothesis [\[hyp:network\_size\]](#hyp:network_size){reference-type="ref" reference="hyp:network_size"}: Collaboration Networks {#sssec:resource_based_view_theory}
---------------------------------------------------------------------------------------------------------------------------------
+## Hypothesis 4: Collaboration Networks
 
 While firms utilize different mechanisms to control OSS projects, some
 organizations might also aim to attract collaborators to reduce costs
@@ -441,7 +434,7 @@ perspective on OI and OSS processes [@vanhaverbeke2014].
 
 Instead of focusing solely on a single resource, this view can be
 expanded by examining a collection of resources as the unit of analysis.
-In their empirical and simulation study [@alexy2018] showed that in both
+In their empirical and simulation study @alexy2018 showed that in both
 monopolistic and duopolistic situations, open innovation strategies
 could increase profits through complementary effects with other
 resources. Specifically, firms could offer complementary products or
@@ -456,7 +449,7 @@ cultivate intangible assets. Overall, firms which were able to reduce
 their fixed cost through utilizing their network of resources and
 relationships were able to generate a sustained competitive advantage
 [@alexy2018]. Some additional evidence of this comes from a study by
-[@singh2011], who showed that the number of internal and external
+@singh2011, who showed that the number of internal and external
 contacts of developers are significant predictors for project success
 within a panel of 2,378 projects.
 
@@ -472,7 +465,7 @@ paid desktop browsers through free offerings in the process
 development with razor-blade business models in which control over one
 resource is given up in exchange for control of another
 [@abdelkafi2013; @tripsas2000]. This type of innovation also seems to
-impact the overall market capitalization of the firm. [@liu2022] showed
+impact the overall market capitalization of the firm. @liu2022 showed
 in their analysis of 132 Chinese firms that participation within a
 firm's innovation network and network size were significant predictors
 of market value, suggesting that these relationships can be seen as
@@ -489,44 +482,38 @@ utilize the relationships of the main contributors, enabling smaller
 firms to establish valuable partnerships and therefore extracting rent
 from this relationship [@lin2008]. Unfortunately, previous research has
 only paid little attention to the ability of a firm's network value to
-attract similar partners. An exception is [@casalo2009], who showed in
+attract similar partners. An exception is @casalo2009, who showed in
 their analysis of 215 OSS developers that the reputation of the main
 contributing firm plays a significant role in attracting new developers
 to the project. However, previous research has not systemically
 evaluated to what extent these network effects can attract corporate
 collaborations.
 
-OSS projects which have high network-value contributors will attract
-more collaborators [\[hyp:network\_size\]]{#hyp:network_size
-label="hyp:network_size"}
+::: {.callout-tip title="Hypothesis 4: Collaboration Networks"}
+OSS projects which have high network-value contributors will attract more collaborators
+:::
 
-Hypothesis [\[hyp:domanitation\_network\]](#hyp:domanitation_network){reference-type="ref" reference="hyp:domanitation_network"}: Interaction between contribution intensity and network-value {#ssection:domination_network}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Hypothesis 5: Interaction between contribution intensity and network-value 
 
 As RBV suggests that two firms may weight their strategic importance to
 maintain control over the same resource differently depending on the
 composition of their resource bundle. Thus, some firms may desire to
 control a focal resource to utilize their unique resource bundle, while
 another firm may consider the same resource only as a small part of
-their broader resource bundle (Figure
-[\[fig:resource\_bundles\]](#fig:resource_bundles){reference-type="ref"
-reference="fig:resource_bundles"}). This potentially explains why direct
+their broader resource bundle (@fig-resource_bundles). This potentially explains why direct
 competitors are less likely to engage in the co-production of OSS
 software and why some firms will dominate specific OSS projects while
 contributing to others only sporadically [@zhang2022]. Similarly,
-[@dyer1997] noted that partners who bring a higher percentage and more
+@dyer1997 noted that partners who bring a higher percentage and more
 critical resources within the partnership could also extract a higher
 proportion of the rent. So far, this interdependency and power structure
 within the OSS network has only received little attention from the
 academic literature [@vanhaverbeke2014].
 
 ![Firms contributing to different projects based on
-importance](images/bundle-overlap.excalidraw.png)
+importance](images/bundle-overlap.excalidraw.png){#fig-resource_bundles}
 
-[\[fig:resource\_bundles\]]{#fig:resource_bundles
-label="fig:resource_bundles"}
-
-An exception is [@demontalvo2004], who showed that telecommunication
+An exception is @demontalvo2004, who showed that telecommunication
 network operators in Japan, the U.S.A., and Europe control the overall
 value network by contributing unique resources. In their analysis, the
 authors categorized resources into essential, network-specific, and
@@ -551,24 +538,24 @@ larger enterprises as they are often not direct competitors and can more
 easily provide generic resources, such as code contributions, managing
 their perceived risk with a strong partner.
 
+
+::: {.callout-tip title="Hypothesis 5: Interaction between contribution intensity and network-value"}
 Projects dominated by a firm with a high number of contributors will
 attract more collaborators than a dominating company with few
-contributors. [\[hyp:domanitation\_network\]]{#hyp:domanitation_network
-label="hyp:domanitation_network"}
+contributors.
+:::
 
-Methods {#sec:methods}
+Methods
 =======
 
-Dataset {#ssec:dataset}
+Dataset
 -------
 
 GitHub is a popular platform for software developers that allows
 individuals and teams to work together on software by providing a
 centralized location for code repositories, issue tracking, project
 management, and collaboration tools [@githubinc.2023]. The platform has
-seen significant growth over the last ten years (Figure
-[\[fig:repo\_growth\]](#fig:repo_growth){reference-type="ref"
-reference="fig:repo_growth"}) and can be considered the most popular and
+seen significant growth over the last ten years (@fig-repo_growth) and can be considered the most popular and
 largest code hosting platform worldwide. GitHub is particularly popular
 among open-source developers, despite being owned by Microsoft, which
 acquired the platform in 2018 [@greene2018].
@@ -586,7 +573,7 @@ reported issues, and number of users who bookmarked the software. GitHub
 also tracks the number of copies users have created on the platform for
 each project, also called 'forks'.
 
-### Collecting and Filtering {#ssec:collection-and-filtering}
+### Collecting and Filtering
 
 In order to facilitate the project-level analysis of corporate
 collaboration, I have acquired all developer commits from 2022 in code
@@ -613,16 +600,14 @@ these projects might have biased the results towards characteristics of
 inactive projects. After these steps, a total of $1,127$ projects
 remained with $1,517,498$ code commits in total.
 
-### Identification of Developer Affiliation {#sssec:developer-affilation}
+### Identification of Developer Affiliation
 
 To estimate the contribution of each firm to individual OSS projects,
 one needs to attribute each commit to a user and their employer.
 However, developers' affiliations are not included in the meta-data and
 need to be derived based on user-name and email addresses. For example,
 if a developer's email address domain were 'ch.ibm.com' or 'de.ibm.com',
-their affiliation would be classified as IBM (see Table
-[\[tab:affiliation\_example\]](#tab:affiliation_example){reference-type="ref"
-reference="tab:affiliation_example"} for examples). Interestingly, firms
+their affiliation would be classified as IBM (see @tbl-affiliation_example for examples). Interestingly, firms
 often reflect their employees' hierarchical structures or geographical
 locations within their email domains. This makes the association of
 email domains with organizational entities more challenging. To support
@@ -638,18 +623,20 @@ that could not be affiliated with any company were discarded from the
 analysis. Out of 267 technology companies, 237 were found to be active
 on GitHub during the investigation period.
 
+::: {#tbl-affiliation_example}
+
   User Name       Email Address                                             Affiliation
   --------------- --------------------------------------------------------- -------------
   Alex Halorado   d1bbfd851efd451b402ce3429acab778b9b64dc2\@elastic.co      Elastic
   Michael Micht   adf2668dc4269e7975f009ac8ef1a5765fd3ef1d\@microsoft.com   Microsoft
   Tian Ho         ee4d4d946a16706035a4754f9504dccb256d\@alibaba-inc.com     Alibaba
 
-  : Examples of developer affiliations based on email addresses
+Examples of developer affiliations based on email addresses
 
-[\[tab:affiliation\_example\]]{#tab:affiliation_example
-label="tab:affiliation_example"}
+:::
 
-Data Processing {#ssec:data_processing}
+
+Data Processing
 ---------------
 
 The extracted data on each project, user, and code commit were further
@@ -701,7 +688,7 @@ collaborators. Hence, the variable *centrality* represents the network
 centrality of the firm that has contributed the most code commits to a
 respective OSS project.
 
-### Project Characteristics {#sssection:project-characteristics}
+### Project Characteristics
 
 The most interesting variable within this analysis is the number of
 firms contributing to an OSS project. As each commit author is
@@ -724,7 +711,7 @@ issues, and number of project copies ('forks'). These variables help
 account for the popularity and quality of a project which might
 influence developers' desire to contribute to the project.
 
-### OSS Project License {#sssection:project-licenses-method}
+### OSS Project License
 
 A project's license is an integral part of an OSS project as it governs
 how much others can reuse and modify the source code, potentially
@@ -737,7 +724,7 @@ unique identified licenses. Licenses were then classified into
 'copyleft' or 'permissive' license. Projects which did not have any
 license were labeled to be in the public domain.
 
-### Project Contribution Heterogeneity {#sssection:project-contribuiton-diversity-method}
+### Project Contribution Heterogeneity 
 
 As the overall contributions and collaborations between firms are of
 central importance to this thesis, I also derived a measurement of
@@ -763,12 +750,11 @@ $D=0.5$ would suggest that there is a 50% chance that two randomly
 selected contributors are from different companies.
 
 As a result of this data processing, several variables of interest have
-been defined for further analysis (Table
-[\[tab:variables\]](#tab:variables){reference-type="ref"
-reference="tab:variables"}). As many of these variables represent counts
+been defined for further analysis (@tbl-variables). As many of these variables represent counts
 and are heavily skewed, a simple $\log$ transformation was applied. The
 following section will describe the statistical models and methodologies
 used to test the previously stated hypotheses.
+
 
   Variable Name                    Definition                                           Type          Transformation
   -------------------------------- ---------------------------------------------------- ------------- ----------------
@@ -784,10 +770,10 @@ used to test the previously stated hypotheses.
   SDI                              SDI value of the project                             Dependent     Identity
   Collaborator                     Number of firms contributing to the project          Dependent     Identity
 
-  : List of used variables, their roles, and applied
-  transformations[]{label="tab:variables"}
+: List of used variables, their roles, and applied transformations {#tbl-variables}
 
-Data Analysis {#ssec:data_analysis}
+
+Data Analysis
 -------------
 
 First, a Poisson regression will investigate the relationship between
@@ -795,7 +781,7 @@ independent variables and the number of collaborators in an OSS project.
 Second, a Monte Carlo approach will test a potential U-shaped
 relationship between SDI and a project's productivity.
 
-### Statistical Modeling {#sssec:modeling}
+### Statistical Modeling
 
 I used a Poisson regression model to analyze the relationship between
 independent variables and the number of firms contributing to an OSS
@@ -824,7 +810,7 @@ absence of instrumental variables. While this method cannot correct
 biased estimates, it can give a good indication of the presence of bias
 [@abdallah2015].
 
-### U-Shape Analysis {#sssec:u_shape}
+### U-Shape Analysis
 
 In many cases, researchers have not employed appropriate methodologies
 to detect U-shaped relationships, leading to the publication of
@@ -837,7 +823,7 @@ coefficient implies an inverted U-shape relationship. One can further
 add additional control variables to this regression to account for
 potential confounders.
 
-However, [@lind2010] showed that this process is not sufficient to
+However, @lind2010 showed that this process is not sufficient to
 demonstrate a U-shape relationship and proposed the following
 conditions: First, $\beta_2$ and $\beta_1$ need the correct sign and be
 statistically significant. Second, the slope at both ends of the data
@@ -861,15 +847,14 @@ sampling with replacement from my datasets and followed the steps
 outlined above to compute the relevant U-shape statistics as well as the
 corresponding 95% confidence intervals.
 
-Results {#sec:result}
+Results
 =======
 
-Descriptive Findings {#sec:descriptive_results}
+Descriptive Findings
 --------------------
 
-A descriptive overview of all used variables is given in table
-[\[tab:descriptive\_stats\]](#tab:descriptive_stats){reference-type="ref"
-reference="tab:descriptive_stats"} as more detailed information
+A descriptive overview of all used variables is given in
+@tbl-descriptive_stats as more detailed information
 regarding distributions and correlations is provided in the appendix. As
 anticipated, most projects seem to have dominant contributors with a
 median commit intensity of 96.85 (interquartile range, IQR=82.78-99.39),
@@ -885,9 +870,7 @@ governance has not previously been discussed extensively.
 
 Overall code contributions, issues, bookmarks, forks and size, and
 number of collaborators within projects demonstrate high variations
-(Table
-[\[tab:descriptive\_stats\]](#tab:descriptive_stats){reference-type="ref"
-reference="tab:descriptive_stats"}). This is unsurprising as most of
+(@tbl-descriptive_stats). This is unsurprising as most of
 these variables have long-tailed distributions with several highly
 productive and active projects (see Appendix). Interestingly, many
 projects investigated within this analysis are rather old, with an
@@ -913,10 +896,7 @@ many projects only being actively developed for a couple of years.
   Commits                  1,346.49 (4,260.29)
                        
 
-  : Descriptive statistics
-
-[\[tab:descriptive\_stats\]]{#tab:descriptive_stats
-label="tab:descriptive_stats"}
+  : Descriptive statistics {#tbl-descriptive_stats}
 
 Additionally, it is surprising to discover that, on average $4.07$
 companies are actively working on OSS projects ($SD=4.53$), indicating
@@ -935,9 +915,7 @@ similar level of variation is also expressed in the network centrality
 of the leading contributing with an average of $60$ ($SD=22$), ranging
 from $0.5$ to $79$. Not surprisingly, well known technology companies
 are occupying central aspects of the overall open-source contributor
-network as shown in Table
-[\[tab:network\_centrality\_top10\]](#tab:network_centrality_top10){reference-type="ref"
-reference="tab:network_centrality_top10"}.
+network as shown in @tbl-network_centrality_top10.
 
                          Centrality
   -------------------- ------------
@@ -954,40 +932,23 @@ reference="tab:network_centrality_top10"}.
 
   :  Top 10 firms by network centrality. Network centrality is expressed
   as a percentage of the maximum possible number of edges a node can
-  have.
+  have.  {#tbl-network_centrality_top10}
 
-[\[tab:network\_centrality\_top10\]]{#tab:network_centrality_top10
-label="tab:network_centrality_top10"}
-
-Inferential Results {#sec:inferential_results}
+Inferential Results 
 -------------------
 
 I conducted a Poisson regression to examine the relationship between the
 independent variables and the number of collaborators in a project. This
-regression analysis was used to examine hypotheses
-[\[hyp:firm\_dominating\]](#hyp:firm_dominating){reference-type="ref"
-reference="hyp:firm_dominating"},
-[\[hyp:license\]](#hyp:license){reference-type="ref"
-reference="hyp:license"},
-[\[hyp:network\_size\]](#hyp:network_size){reference-type="ref"
-reference="hyp:network_size"}, and
-[\[hyp:domanitation\_network\]](#hyp:domanitation_network){reference-type="ref"
-reference="hyp:domanitation_network"} stated in the previous section.
-The U-shape relationship in hypothesis
-[\[hyp:u-shape\]](#hyp:u-shape){reference-type="ref"
-reference="hyp:u-shape"} was tested separately.
+regression analysis was used to examine hypotheses 1, 2, 4, and 5 stated in the previous section.
+The U-shape relationship in hypothesis 3 was tested separately.
 
-### Poisson Regression Results {#ssec:regression_results}
+### Poisson Regression Results 
 
 Overall the model was statistical significant ($F(11, 1115)=247.58$,
 $p<0.001$) with a Pseudo R-square of $0.86$. The overview of the
-estimated parameters is presented in table
-[\[tab:regression\_results\]](#tab:regression_results){reference-type="ref"
-reference="tab:regression_results"}.
+estimated parameters is presented in @tbl-regression_results.
 
-**Hypothesis
-[\[hyp:firm\_dominating\]](#hyp:firm_dominating){reference-type="ref"
-reference="hyp:firm_dominating"}:** *OSS projects in which a single firm
+**Hypothesis 1:** *OSS projects in which a single firm
 dominates will have fewer collaborating partners*
 
 The results indicate that commit intensity is a significant and robust
@@ -1005,8 +966,7 @@ explaining the total number of collaborators per project. In summary,
 projects dominated by single cooperations have a significantly lower
 total number of corporate contributors.
 
-**Hypothesis [\[hyp:license\]](#hyp:license){reference-type="ref"
-reference="hyp:license"}:** *OSS projects with more restrictive licenses
+**Hypothesis 2:** *OSS projects with more restrictive licenses
 have fewer collaborators.*
 
 Within this regression results, copyleft and permissive licenses were
@@ -1023,11 +983,10 @@ smaller than compared to the other groups, indicating a lack of
 statistical power. In summary, there is some evidence that projects with
 more restrictive licenses have fewer overall collaborating firms.
 
-**Hypothesis
-[\[hyp:network\_size\]](#hyp:network_size){reference-type="ref"
-reference="hyp:network_size"}** *OSS projects which have high
-network-value contributors will attract more collaborators* The
-regression results suggest that network centrality is not a significant
+**Hypothesis 4** *OSS projects which have high
+network-value contributors will attract more collaborators*
+
+The regression results suggest that network centrality is not a significant
 predictor for the total number of collaborators in OSS projects
 ($\beta =-0.002, z=-1.16, p=0.241$) independent of other predictors.
 Further, while the estimated effect size is small compared to other
@@ -1035,17 +994,13 @@ predictors, the direction of the effect is in contrast to the stated
 hypothesis. In summary, OSS projects with high network-value
 contributors do not affect the number of collaborators.
 
-**Hypothesis
-[\[hyp:domanitation\_network\]](#hyp:domanitation_network){reference-type="ref"
-reference="hyp:domanitation_network"}** *Projects dominated by a firm
+**Hypothesis 5** *Projects dominated by a firm
 with a high number of contributors will attract more collaborators than
 a dominating company with few contributors.*
 
 To test to which extent the network centrality of a dominating firm is
 predictive of the number of collaborators in a project, I have tested
-the interaction effect between intensity and network centrality (Figure
-[\[fig:interaction\_effect\]](#fig:interaction_effect){reference-type="ref"
-reference="fig:interaction_effect"}). The estimated interaction
+the interaction effect between intensity and network centrality ( @fig-interaction_effect). The estimated interaction
 coefficient suggests that projects in which firms with high network
 centrality dominate do not have a significantly higher number of
 collaborators ($\beta = 0.0005, z=1.53, p=0.122$). The small effect size
@@ -1056,10 +1011,7 @@ by a single company with high network value are not significantly
 affecting the degree of collaboration.
 
 ![ Interaction effect between centrality and intensity on the number of
-project collaborators. ](images/interaction_centrality_intensity.pdf)
-
-[\[fig:interaction\_effect\]]{#fig:interaction_effect
-label="fig:interaction_effect"}
+project collaborators. ](images/interaction_centrality_intensity.png){#fig-interaction_effect .lightbox}
 
 #### Other Predictors
 
@@ -1096,25 +1048,18 @@ that scale.
 
   :  Poisson regression results on the number of project collaborators.
   Both Copyleft and Permissive compare effects against projects within
-  the public domain.
+  the public domain. {#tbl-regression_results}
 
-[\[tab:regression\_results\]]{#tab:regression_results
-label="tab:regression_results"}
+### U-Shape Analysis
 
-### U-Shape Analysis {#ssec:u_shape_analysis}
-
-Hypothesis [\[hyp:u-shape\]](#hyp:u-shape){reference-type="ref"
-reference="hyp:u-shape"} proposed a U-Shape relationship between
+Hypothesis 5 proposed a U-Shape relationship between
 collaboration heterogeneity and project productivity. This relationship
-was tested through the Monte-Carlo methods outlined in section
-[3.3.2](#sssec:u_shape){reference-type="ref" reference="sssec:u_shape"},
-and the empirical relationship is presented in figure
-[\[fig:u\_shape\]](#fig:u_shape){reference-type="ref"
-reference="fig:u_shape"}. Regression results suggest a statistical
+was tested through the Monte-Carlo methods outlined in method section,
+and the empirical relationship is presented in
+@fig-u_shape. Regression results suggest a statistical
 significance model ($F(6, 1120)=82.71$, $p<0.0001$) with an R-square of
-$0.307$. The overview of the estimated parameters is presented in table
-[\[tab:regression\_results\_u\_shape\]](#tab:regression_results_u_shape){reference-type="ref"
-reference="tab:regression_results_u_shape"}. Both SDI
+$0.307$. The overview of the estimated parameters is presented in
+@tbl-regression_results_u_shape. Both SDI
 ($\beta = -4.369, t(6)=-8.709, p<0.001$) and its squared value
 ($\beta = 3.588, t(6)=6.259, p<0.001$) demonstrated to be significant
 predictor of code commits. These results indicate a U-Shape relationship
@@ -1133,9 +1078,8 @@ relationship between productivity and collaboration heterogeneity.
 
 ![ Relationship between code commits and SDI. The red line indicates the
 estimated U-shape relationship between commits and SDI.
-](images/u_shape.pdf)
+](images/u_shape.png){#fig-u_shape .lightbox}
 
-[\[fig:u\_shape\]]{#fig:u_shape label="fig:u_shape"}
 
   **Characteristic**    **Beta**   **SE**^1^   **Statistic**   **95% CI**^1^   **p-value**
   -------------------- ---------- ----------- --------------- --------------- -------------
@@ -1149,12 +1093,10 @@ estimated U-shape relationship between commits and SDI.
 
   :  Least square regression results on the logarithmic number of
   project commits. The unstandardized coefficients and standard errors
-  are reported.
+  are reported. {#tbl-regression_results_u_shape}
 
-[\[tab:regression\_results\_u\_shape\]]{#tab:regression_results_u_shape
-label="tab:regression_results_u_shape"}
 
-Discussion {#sec:discussion}
+Discussion
 ==========
 
 The statistical analysis indicates that single-firm dominance and
@@ -1168,10 +1110,10 @@ single-firm dominance, license restrictiveness, and the effect of
 collaboration heterogeneity on productivity but contradict those
 centered on firms' network centrality.
 
-Implications {#ssec:implicaitons}
+Implications
 ------------
 
-### Firm Commit Intensity {#sssec:intensity}
+### Firm Commit Intensity
 
 In line with previous research, commit intensity has a strong negative
 correlation with the number of project collaborators
@@ -1186,7 +1128,7 @@ the project. Projects with less internal interdependencies might offer
 more room for others to contribute independently of the main code
 committer. This would enable collaborators to work on different aspects
 of the OSS, which may be commercially independent of the main code base.
-For example, [@zhou2017] found in their analyses of the Linux Kernel, a
+For example, @zhou2017 found in their analyses of the Linux Kernel, a
 particular large OSS project, a considerable degree of modularization.
 The authors showed that code contributors would typically restrict
 themselves only to specific modules, such as hardware drivers, which
@@ -1216,7 +1158,7 @@ relationships with other firms but potentially aim to sell complementary
 products or increase their brand image with independent developers. This
 strategy can be utilized to establish or enter new markets by providing
 OSS as a free product or service for customers [@anderson2008]. However,
-[@alexy2018] showed that this strategy will only result in sustainable
+@alexy2018 showed that this strategy will only result in sustainable
 competitive advantage when both fixed costs are lowered and
 complementary products are sold with the OSS. Firms would need to
 attract a substantial amount of independent open-source developers or
@@ -1246,11 +1188,11 @@ licensee [@gomulkiewicz2011; @vonwelser2018]. Thus, hierarchical control
 over OSS projects through licensing agreements might be less effective
 than control via code contributions and project governance.
 
-Further, [@singh2012] found that project managers are more likely to
+Further, @singh2012 found that project managers are more likely to
 choose a license that is consistent with the expectations of the users
 and that of similar projects, pointing to a more social than a strategic
 component of the decision-making progress. In addition, not all previous
-studies agree with these findings. For example, [@colazo2009] showed in
+studies agree with these findings. For example, @colazo2009 showed in
 their analysis of 244 OSS projects that the use of 'copyleft' licenses
 increased the total amount of participating authors within a project.
 However, the study was based on older data, and the number of corporate
@@ -1295,14 +1237,14 @@ in circumstances in which the OSS maintainer is a trusted and reliable
 party, the presented results suggest that this may not lead to a pooled
 R&D among parties.
 
-### Productivity {#sssec:productivity}
+### Productivity
 
 The presented results have supported the theoretical predictions by TCE
 that both firms with low and high levels of contribution heterogeneity
 will show increased productivity. This is in inline with previous
 research showing that diversity and distribution of code contributors
 are significantly associated with productivity in OSS projects
-[@izquierdo2019; @vasilescu2015; @lerner2002; @tan2007]. [@zhang2020a]
+[@izquierdo2019; @vasilescu2015; @lerner2002; @tan2007]. @zhang2020a
 also found similar results and showed that a firm's degree of
 collaboration is a significant predictor of productivity. However, this
 study is the first to show a U-shaped relationship between heterogeneity
@@ -1316,7 +1258,7 @@ in governance cost without a significantly enlarged group of developers,
 leading to a decrease in productivity [@capra2008].
 
 However, the causal direction between governance structure,
-heterogeneous collaborations, and productivity is unclear. [@zajac1993],
+heterogeneous collaborations, and productivity is unclear. @zajac1993,
 in line with TCE, suggested that firms will choose governance structures
 depending on the total value of transactions. Thus, firms may lower
 transaction costs by selecting less hierarchical controls in the hope of
@@ -1338,7 +1280,7 @@ presented results here cannot address the direction of the causal
 relationship, they nevertheless show a more complex relationship between
 productivity and collaboration.
 
-Limitations and Future Research {#ssec:limitations}
+Limitations and Future Research
 -------------------------------
 
 As with all studies, this analysis has some limitations which should be
@@ -1376,7 +1318,7 @@ qualitative studies can complement these quantitative findings by
 providing contextual information and an in-depth understanding of how
 both commit intensity and licenses impact corporate OSS collaboration.
 
-Managerial Implications {#ssec:managerial}
+Managerial Implications
 -----------------------
 
 A critical problem for many OSS strategies is publicly integrating
@@ -1403,7 +1345,7 @@ consider mitigating these factors by sharing governance costs with
 collaborators early and providing a governance structure to support the
 growth in contributors.
 
-Conclusion {#ssec:conclusion}
+Conclusion
 ----------
 
 The here presented results are one of the few analyses of OSS which aim
@@ -1446,11 +1388,10 @@ context of OSS projects. Enabling firms to open source their internal
 software, collaborate with others, and utilize existing OSS projects
 effectively and in alignment with their overall strategic objectives.
 
-Appendix {#sec:appendix}
-========
+## Appendix {.appendix}
 
 ![ Distribution of variables. Histograms of continuous and bar plot of
-categorized variables. ](images/distributions.pdf)
+categorized variables.](images/distributions.png)
 
 ![ Correlation Heatmap. Correlations between continuous variables
-](images/heatmap.pdf)
+](images/heatmap.png)

@@ -9,3 +9,5 @@ vendor
 _notebooks/.ipynb_checkpoints
 
 /.quarto/
+
+**/*.quarto_ipynb

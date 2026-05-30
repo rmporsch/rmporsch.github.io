@@ -1,6 +1,6 @@
 ---
 title: "Good Strategy/Bad Strategy Made Me Take Strategy More Seriously"
-description: "Richard Rumelt's Good Strategy/Bad Strategy changed how I think about strategy: not as ambition or destination-setting, but as diagnosis, guiding policy, and coherent action under uncertainty."
+description: "Richard Rumelt's Good Strategy/Bad Strategy helped me rethink about strategy: not as ambition or destination-setting, but as diagnosis, guiding policy, and coherent action under uncertainty."
 author: "Robert Porsch"
 date: "2026-05-30"
 categories:
@@ -13,13 +13,13 @@ bibliography: references.bib
 
 Some business books become famous because they are useful in the moment. Richard Rumelt's *Good Strategy/Bad Strategy* feels more impressive than that. It was published years ago, but it still feels uncomfortably current because the same mistakes it criticizes are still everywhere: leaders setting ambitious goals, calling them strategy, and then acting surprised when nothing really changes [@rumelt2011].
 
-What struck me most about the book is that it actually changed how I think about strategy in two important ways.
+What struck me most about the book is that it actually changed how I think about strategy in two ways.
 
 First, it made me appreciate that good strategy takes time. Not because slow thinking is automatically better, but because real strategy depends on careful analysis of the situation. You have to understand the nature of the challenge, what is actually causing underperformance or friction, what constraints matter, and where leverage might exist. That kind of work cannot be replaced by vision statements, planning rituals, or generic ambition. Although AI can certainly help these days. Rumelt makes strategy feel less like a declaration and more like disciplined diagnosis.
 
 Second, the book sharpened my sense that setting goals are the easy part. The harder and more important work is diagnosing the situation, setting a clear guiding policy, and translating that policy into a coherent set of actions. That is what makes strategy useful under uncertainty. The "what" of strategy is often easy to say out loud.Enter a new market. Develop these use-cases. Improve retention. Increase margins. But a strategy only becomes real when it connects a diagnosis of the problem to a policy for dealing with it and to coordinated actions that actually follow from that policy.
 
-That is one of the deeper lesson I took from the book: uncertainty is not a temporary inconvenience that good management eventually eliminates. It is the normal condition. Because of that, strategy is not just about naming a destination. It is about understanding the situation well enough to choose a coherent approach and then act on it consistently.
+That is one of the core lessons I took from the book: uncertainty is not a temporary inconvenience that good management eventually eliminates. It is the normal condition. Because of that, strategy is not just about naming a destination. It is about understanding the situation well enough to choose a coherent approach and then act on it consistently.
 
 ## Why the book still feels relevant
 

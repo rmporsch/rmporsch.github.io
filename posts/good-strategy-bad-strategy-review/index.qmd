@@ -6,6 +6,8 @@ date: "2026-05-30"
 categories:
   - books
   - strategy
+image: images/cover_good_strategy_bad_strategy.jpg
+image-alt: "Cover image for Good Strategy/Bad Strategy review"
 bibliography: references.bib
 ---
 

@@ -112,6 +112,20 @@
     "text": "Appendix\n\n\n\n\nDistribution of variables. Histograms of continuous and bar plot of categorized variables.\n\n\n\n\n\nCorrelation Heatmap. Correlations between continuous variables"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Myblog",
+    "section": "",
+    "text": "Good Strategy/Bad Strategy Made Me Take Strategy More Seriously\n\n\n\nbooks\n\nstrategy\n\n\n\nRichard Rumelt’s Good Strategy/Bad Strategy changed how I think about strategy: not as ambition or destination-setting, but as diagnosis, guiding policy, and coherent action under uncertainty.\n\n\n\n\n\nMay 30, 2026\n\n\nRobert Porsch\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.\n\n\n\nthesis\n\n\n\nAs part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity.\n\n\n\n\n\nJun 5, 2023\n\n\nRobert Porsch\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/good-strategy-bad-strategy-review/index.html",
     "href": "posts/good-strategy-bad-strategy-review/index.html",
     "title": "Good Strategy/Bad Strategy Made Me Take Strategy More Seriously",
@@ -145,19 +159,5 @@
     "title": "Good Strategy/Bad Strategy Made Me Take Strategy More Seriously",
     "section": "Final take",
     "text": "Final take\nIt takes time. It requires careful analysis. It depends on more than defining objectives. It requires diagnosing the situation, setting a clear guiding policy, and turning that policy into coherent action. And it has to be approached as a disciplined hypothesis: make the best judgment you can, act on it coherently, gather evidence, and keep testing whether that judgment still holds.\nThat may be why the book still feels fresh. It is describing a discipline that many organizations still have not learned. We still see management teams mistake goals for strategy. We still see planning processes produce slogans instead of diagnosis.\nRumelt’s book matters because it forces a more demanding standard. It reminds us that strategy is not about sounding decisive. It is about understanding the situation well enough to choose a coherent policy, back it with coordinated action, and learn from reality without pretending uncertainty has disappeared.\nNote: Interestingly I have seen serval agent skills implementing the same principles that Rumelt describes, which suggests that these ideas are not just theoretical but also practical in the age of AI (see here for an example)."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Myblog",
-    "section": "",
-    "text": "Good Strategy/Bad Strategy Made Me Take Strategy More Seriously\n\n\n\nbooks\n\nstrategy\n\n\n\nRichard Rumelt’s Good Strategy/Bad Strategy changed how I think about strategy: not as ambition or destination-setting, but as diagnosis, guiding policy, and coherent action under uncertainty.\n\n\n\n\n\nMay 30, 2026\n\n\nRobert Porsch\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Source, Open Collaboration: A Statistical Analysis of Firm Interactions in Software Development.\n\n\n\nthesis\n\n\n\nAs part of my MBA with the University of Warwick, I studied collaboration among firms in open-source software projects. I found that single-firm dominance and license restrictiveness hinder collaboration, while diversity in collaboration has a U-shaped effect on productivity. My findings suggest that firms should provide opportunities for collaboration and balance hierarchical controls to attract partners and enhance productivity.\n\n\n\n\n\nJun 5, 2023\n\n\nRobert Porsch\n\n\n\n\n\nNo matching items"
   }
 ]
